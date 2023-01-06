@@ -19,10 +19,16 @@
         lines:
           - network 0.0.0.0 255.255.255.255 area 0
           
+
+      
+      
+  tasks:
+   - name: run show version on ios device
      ios_command:
-      commands: 
-      - show version
-      - show interfaces
+       commands:
+         - show version
+         - show interfaces
+       host: "{{ inventory_hostname }}"
           
           
 
