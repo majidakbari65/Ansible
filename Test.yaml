@@ -31,8 +31,4 @@
          - show interfaces
        host: "{{ inventory_hostname }}"
           
-          
 
-
-      register: print_output
-    -  debug: var=print_output
