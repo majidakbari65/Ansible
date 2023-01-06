@@ -18,6 +18,12 @@
         parents: router ospf 1
         lines:
           - network 0.0.0.0 255.255.255.255 area 0
+          
+    - name: run show version on remote devices
+      ios_command:
+      commands: 
+      - show version
+      - show interfaces
 
       register: print_output
 
