@@ -19,14 +19,13 @@
         lines:
           - network 0.0.0.0 255.255.255.255 area 0
           
-          
-  tasks:
-          
-    - name: run show version on remote devices
-      ios_command:
+     ios_command:
       commands: 
       - show version
       - show interfaces
+          
+          
+
 
       register: print_output
 
