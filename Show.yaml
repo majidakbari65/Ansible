@@ -1,5 +1,5 @@
 - name: ping module demo
-  #hosts: all
+  hosts: all
   become: false
   tasks:
     #- name: test connection
@@ -9,7 +9,7 @@
     #  action: ping
       
     - name: Execute ping
-      shell: "ping -c 4 192.168.10.102"
+      shell: "traceroute 192.168.10.102"
       register: result
       
     - name: Show result
