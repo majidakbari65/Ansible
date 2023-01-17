@@ -5,8 +5,8 @@
     #- name: test connection
     #  ansible.builtin.ping:
     
-    - name: Pinging Host
-      action: ping
+    #- name: Pinging Host
+    #  action: ping
       
     - name: Execute ping
       shell: "ping -c 4 192.168.10.102"
