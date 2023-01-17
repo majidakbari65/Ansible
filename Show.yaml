@@ -9,7 +9,7 @@
       action: ping
       
     - name: Execute ping
-      shell: "ping -c 4 192.168.10.101"
+      shell: "ping -c 4 192.168.10.102"
       register: result
       
     - name: Show result
