@@ -6,21 +6,15 @@
       ios_command:
         commands:
           - show ip inter br
-        register: output1
+      #  register: output1
     
     - name: show log
       ios_command:
         commands:
           - show log | include down
-        register: output
+      #  register: output
 
-    - name: print output
-      debug:
-        var: output.stdout_lines
-
-    - name: print output1
-      debug:
-        var: output1.stdout_lines       
+      
     #- name: run multiple commands on remote nodes
     #  ios_command:
     #    commands:
