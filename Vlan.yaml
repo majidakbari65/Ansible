@@ -10,6 +10,6 @@
     
     - name: Create vlan
       ios_vlan:
-      vlan_id: 100
-      name: IT
-      state: present
+        vlan_id: 100
+        name: IT
+        state: present
