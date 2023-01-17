@@ -4,7 +4,7 @@
     - name: show interface
       ios_command:
         commands:
-          - show interfaces
+          - show ip inter br
     
     - name: show log
       ios_command:
