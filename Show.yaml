@@ -1,4 +1,4 @@
-- name: Hello World Sample
+- name: Show Command
   hosts: R1
   gather_facts: false
   tasks:
@@ -13,6 +13,12 @@
         commands:
           - show log | include down
       #  register: output
+
+    - name: show CPU History
+      ios_command:
+        commands:
+          - show processes cpu history
+
 
       
     #- name: run multiple commands on remote nodes
