@@ -5,13 +5,13 @@
 
 
   tasks:
-    - name: make interface up
+    - name: make interface down
       ios_interface:
           name: GigabitEthernet0/1
           #name: "{{ Device-interface }}"
           enabled: False
 
-    - name: make interface down
+    - name: make interface up
       ios_interface:
           name: GigabitEthernet0/1
           #name: "{{ Device-interface }}"
