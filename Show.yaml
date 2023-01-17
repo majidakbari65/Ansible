@@ -1,6 +1,6 @@
 - name: Hello World Sample
   hosts: R1
-   gather_facts: false
+  gather_facts: false
   tasks:
     - name: show interface
       ios_command:
