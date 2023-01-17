@@ -1,5 +1,5 @@
 - name: ping module demo
-  hosts: all
+  hosts: Router
   become: false
   tasks:
     #- name: test connection
