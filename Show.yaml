@@ -1,9 +1,9 @@
-- name: Hello World Sample
-  hosts: R1
+- name: ping module demo
+  hosts: all
+  become: false
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+    - name: test connection
+      ansible.builtin.ping:
        
     - name: run multiple commands on remote nodes
       ios_command:
