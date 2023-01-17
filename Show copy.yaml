@@ -1,0 +1,10 @@
+- name: Show Command
+  hosts: R1
+  tasks: 
+    - name: show interface and route
+      ios_command:
+        commands:
+          - show ip int br
+          - show ip route
+
+      
