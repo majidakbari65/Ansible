@@ -2,10 +2,10 @@
   hosts: all
   gather_facts: false
   tasks:
-    #- name: show interface
-    #  ios_command:
-    #    commands:
-    #      - show ip inter br
+    - name: show vlan
+      ios_command:
+        commands:
+          - show vlan
     #    register: output1
     
     - name: Create vlan
