@@ -7,12 +7,13 @@
   tasks:
     - name: make interface up
       ios_interface:
-          #name: GigabitEthernet0/2
-          name: "{{ Device-interface }}"
+          name: GigabitEthernet0/1
+          #name: "{{ Device-interface }}"
           enabled: False
 
     - name: make interface down
       ios_interface:
-          name: "{{ Device-interface }}"
+          name: GigabitEthernet0/1
+          #name: "{{ Device-interface }}"
           enabled: True
 
