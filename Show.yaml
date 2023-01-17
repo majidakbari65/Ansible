@@ -7,9 +7,11 @@
     
     - name: Pinging Host
       action: ping
-       
-    - name: run multiple commands on remote nodes
-      ios_command:
-        commands:
-          - show ip int br
-          - show ip route
+      
+    - name: Execute ping
+      shell: "ping -c 4 R1"
+      register: result
+      
+    - name: Show result
+      debug:
+        msg:"{{ result['stdout_lines'] }}"
