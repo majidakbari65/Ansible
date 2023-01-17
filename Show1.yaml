@@ -1,9 +1,10 @@
 - name: Check Status of Devices
-  hosts: R1
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+  hosts: R1  tasks:
+    - name: run multiple commands on remote nodes
+      ios_command:
+        commands:
+          - ping 192.168.10.102
+          - traceroute 192.168.10.102
        
     - name: run multiple commands on remote nodes
       ios_command:
