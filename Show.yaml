@@ -1,17 +1,28 @@
-- name: ping module demo
+- name: Hello World Sample
   hosts: Router
-  become: false
   tasks:
+    - name: show interface and log
+      ios_command:
+        commands:
+          - show log | include down
+          - show interfaces
+       
+    #- name: run multiple commands on remote nodes
+    #  ios_command:
+    #    commands:
+    #      - show version
+    #      - show interfaces
+
     #- name: test connection
     #  ansible.builtin.ping:
     
     #- name: Pinging Host
     #  action: ping
       
-    - name: Execute ping
-      shell: "traceroute 192.168.10.102"
-      register: result
+    #- name: Execute ping
+    #  shell: "traceroute 192.168.10.102"
+    #  register: result
       
-    - name: Show result
-      debug:
-        msg:"{{ result['stdout_lines'] }}"
+    #- name: Show result
+    #  debug:
+    #    msg:"{{ result['stdout_lines'] }}"
