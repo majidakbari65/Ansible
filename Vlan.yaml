@@ -1,15 +1,10 @@
-- name: Add VLAN
+- name: check ospf neighbor
   hosts: all
   gather_facts: false
   tasks:
-    - name: show vlan
+    - name: sh ospf neighbor
       ios_command:
         commands:
-          - show vlan
+          - sh ip ospf neighbor
     #    register: output1
     
-    - name: Create vlan
-      ios_vlan:
-        vlan_id: 100
-        name: IT
-        state: present
