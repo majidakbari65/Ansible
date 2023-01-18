@@ -1,5 +1,5 @@
 - name: check ospf neighbor
-  hosts: R1,R2
+  hosts: all
   gather_facts: false
   tasks:
     - name: sh ospf neighbor
