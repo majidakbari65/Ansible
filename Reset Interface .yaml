@@ -1,5 +1,5 @@
 - name: Show Command
-  hosts: R1
+  hosts: all
   gather_facts: false
 
 
