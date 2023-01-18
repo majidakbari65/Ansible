@@ -2,10 +2,10 @@
   hosts: all
   gather_facts: false
   tasks:
-    - name: show interface
-      ios_command:
-        commands:
-          - show ip inter br
+    - #name: show interface
+      #ios_command:
+      #  commands:
+      #    - show ip inter br
       #  register: output1
     
     - name: show log
