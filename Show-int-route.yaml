@@ -1,5 +1,5 @@
 - name: Show Command
-  hosts: all
+  hosts: router
   tasks: 
     - name: show interface and route
       ios_command:
