@@ -1,5 +1,5 @@
 - name: Show Command
-  hosts: all
+  hosts: Router, Switch
   gather_facts: false
   tasks:
     - #name: show interface
